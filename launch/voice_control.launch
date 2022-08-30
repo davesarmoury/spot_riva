@@ -1,0 +1,5 @@
+<launch>
+  <node pkg="spot_riva" type="talk.py" name="talk" args="--play-audio" />
+  <node pkg="spot_riva" type="transcribe_mic.py" name="transcribe_mic" />
+  <node pkg="spot_riva" type="voice_control.py" name="voice_control" />
+</launch>
